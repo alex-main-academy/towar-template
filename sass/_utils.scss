@@ -1,0 +1,28 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $primary-font;
+    color: $text-color;
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 108rem;
+    margin: 0 auto;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        max-width: 37rem;
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        max-width: 32rem;
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: $title-color;
+}

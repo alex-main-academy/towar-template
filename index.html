@@ -1,0 +1,714 @@
+<?php 
+    $main_title = 'Тестовый заголовок для сайта';
+?>
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <button class="header__burger">
+                <img src="img/burger-icon.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="30"
+                    height="30">
+            </button>
+            <img src="img/logo.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" class="header__logo" width="136"
+                height="24">
+            <img src="img/warranty.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" class="header__warranty"
+                width="55" height="55">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero__stories">
+                    <li class="hero__story">
+                        <div class="hero__story_wrapper">
+                            <img src="img/story-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="52" height="52">
+                        </div>
+                        <p class="hero__story_name">Florentina D.</p>
+                    </li>
+                    <li class="hero__story">
+                        <div class="hero__story_wrapper">
+                            <img src="img/story-img2.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="52" height="52">
+                        </div>
+                        <p class="hero__story_name">Ines F.</p>
+                    </li>
+                    <li class="hero__story">
+                        <div class="hero__story_wrapper">
+                            <img src="img/story-img3.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="52" height="52">
+                        </div>
+                        <p class="hero__story_name">Lisa T.</p>
+                    </li>
+                    <li class="hero__story">
+                        <div class="hero__story_wrapper">
+                            <img src="img/story-img4.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="52" height="52">
+                        </div>
+                        <p class="hero__story_name">Miha C.</p>
+                    </li>
+                    <li class="hero__story">
+                        <div class="hero__story_wrapper">
+                            <img src="img/story-img5.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="52" height="52">
+                        </div>
+                        <p class="hero__story_name">Olja U.</p>
+                    </li>
+                    <li class="hero__story">
+                        <div class="hero__story_wrapper">
+                            <img src="img/story-img6.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="52" height="52">
+                        </div>
+                        <p class="hero__story_name">Raluca K.</p>
+                    </li>
+                    <li class="hero__story">
+                        <div class="hero__story_wrapper">
+                            <img src="img/story-img7.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="52" height="52">
+                        </div>
+                        <p class="hero__story_name">Sanja C.</p>
+                    </li>
+                    <li class="hero__story">
+                        <div class="hero__story_wrapper">
+                            <img src="img/story-img8.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="52" height="52">
+                        </div>
+                        <p class="hero__story_name">Sergiu M.</p>
+                    </li>
+                </ul>
+                <div class="hero__content">
+                    <div class="hero__offer">
+                        <video src="img/offer.mp4" class="hero__video" loop autoplay muted></video>
+                        <p class="hero__offer_sale">
+                            🔥Golire de stoc <span>-40%</span>
+                        </p>
+                    </div>
+                    <div class="hero__info">
+                        <p class="hero__rating">
+                            <img src="img/stars-rate.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="67"
+                                height="10">
+                            5.0/5 (8 recenzii)
+                        </p>
+                        <p class="hero__uptitle">Masă de călătorie TravelTray pentru copii</p>
+                        <h1 class="hero__title">
+                            Țineți-vă copilul ocupat în timpul călătoriilor lungi
+                        </h1>
+                        <ul class="hero__list">
+                            <li class="hero__item">
+                                <img src="img/true-arrow.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                    width="20" height="20">
+                                Utilizare universală
+                            </li>
+                            <li class="hero__item">
+                                <img src="img/true-arrow.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                    width="20" height="20">
+                                Ideal pentru călătorii lungi
+                            </li>
+                            <li class="hero__item">
+                                <img src="img/true-arrow.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                    width="20" height="20">
+                                Design pliabil și portabil
+                            </li>
+                        </ul>
+                        <div class="hero__price price">
+                            <p class="price__old">183.99 lei</p>
+                            <p class="price__new">109.99 lei</p>
+                            <span class="price__sale">-40%</span>
+                        </div>
+                        <img src="img/pay-way.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                            class="hero__price_way" width="85">
+                        <p class="hero__warning">
+                            ⚠️Stoc curent: <b> Au mai rămas doar 8 produse.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="return">
+            <div class="container">
+                <h2 class="return__title">
+                    100% achiziționare sigură cu posibilitate de returnare fără întrebări.
+                </h2>
+                <div class="return__content">
+                    <img src="img/return-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="300"
+                        class="return__image">
+                    <div class="return__info">
+                        <p class="return__desc">
+                            O masă fantastică, cu o mie și una de posibilități de utilizare. O luăm mereu cu noi în
+                            mașină și fiul nostru găsește mereu ceva cu care să se joace și să se distreze. Cred că este
+                            grozavă și aș recomanda-o cu plăcere oricui are copii mai mici acasă.
+                        </p>
+                        <div class="return__user">
+                            <img src="img/return-avatar.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="return__user_avatar" width="50" height="50">
+                            <h3 class="return__user_name">
+                                <img src="img/stars-rate.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                    width="90">
+                                Mihaela E.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">
+                    Multe posibilități de utilizare
+                </h2>
+                <div class="about__content">
+                    <div class="about__image_wrapper">
+                        <img src="img/about-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                            class="about__image" width="500">
+                    </div>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <img src="img/about-icon1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="about__icon" width="65" height="65">
+                            <div class="about__text">
+                                <h3 class="about__subtitle">
+                                    Utilizare universală
+                                </h3>
+                                <p class="about__desc">
+                                    Masa de călătorie include un suport pentru tabletă, astfel încât copilul dvs. să se
+                                    poată uita la emisiunile preferate în timp ce conduce, oferindu-i în același timp
+                                    libertatea de a se juca, de a desena și un loc confortabil pentru prânz sau gustări.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <img src="img/about-icon2.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="about__icon" width="65" height="65">
+                            <div class="about__text">
+                                <h3 class="about__subtitle">
+                                    Stimularea creativității
+                                </h3>
+                                <p class="about__desc">
+                                    Tabla de desenat oferă posibilități nelimitate de desenat și colorat, încurajând
+                                    dezvoltarea creativității copilului dumneavoastră.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about__item">
+                            <img src="img/about-icon3.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="about__icon" width="65" height="65">
+                            <div class="about__text">
+                                <h3 class="about__subtitle">
+                                    Pentru o călătorie liniștită
+                                </h3>
+                                <p class="about__desc">
+                                    Țineți-vă copilul ocupat cu varietatea largă de activități oferite de masa noastră
+                                    pentru bebeluși și asigurați-vă o călătorie calmă și lipsită de griji în mașină sau
+                                    în avion, chiar dacă aceasta durează ore întregi!
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="container">
+                <h2 class="feature__title">
+                    Pentru o călătorie mai ușoară și mai liniștită cu copiii
+                </h2>
+                <div class="swiper feature__slider">
+                    <div class="swiper-wrapper feature__slider_inner">
+                        <div class="swiper-slide feature__slide">
+                            <img src="img/feature-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="300" class="feature__image">
+                            <h3 class="feature__name">
+                                Pliabil și portabil
+                            </h3>
+                            <p class="feature__desc">
+                                Designul pliabil și ușor vă permite să o transportați ca pe o geantă și să o luați cu
+                                dvs. oriunde.
+                            </p>
+                        </div>
+                        <div class="swiper-slide feature__slide">
+                            <img src="img/feature-img2.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="300" class="feature__image">
+                            <h3 class="feature__name">
+                                Ideală pentru deplasare
+                            </h3>
+                            <p class="feature__desc">
+                                Design convenabil pentru mașină, tren, avion, autobuz și multe altele.
+                            </p>
+                        </div>
+                        <div class="swiper-slide feature__slide">
+                            <img src="img/feature-img3.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="300" class="feature__image">
+                            <h3 class="feature__name">
+                                Buzunare suplimentare
+                            </h3>
+                            <p class="feature__desc">
+                                Masa include, de asemenea, o serie de buzunare de depozitare și o tablă de desen cu
+                                șters.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="box">
+            <div class="container">
+                <h2 class="box__title">
+                    Ce conține pachetul?
+                </h2>
+                <div class="box__content">
+                    <img src="img/box-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="300"
+                        class="box__image">
+                    <div class="box__info">
+                        <p class="box__desc">
+                            1x masă de călătorie pentru copii TravelTray
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews__title">
+                    Mai mult de 1.651.467 de clienți mulțumiți.
+                </h2>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <div class="reviews__user">
+                            <img src="img/reviews-user1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="35" height="35">
+                            <div>
+                                <h3 class="reviews__user_name">M*** ******</h3>
+                                <p class="reviews__user_verify">
+                                    Verified
+                                </p>
+                            </div>
+                        </div>
+                        <p class="reviews__desc">
+                            De multe ori cumpăr din magazinul dvs. online și sunt întotdeauna foarte fericită!
+                        </p>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="reviews__user">
+                            <img src="img/reviews-user2.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="35" height="35">
+                            <div>
+                                <h3 class="reviews__user_name">A*** *****</h3>
+                                <p class="reviews__user_verify">
+                                    Verified
+                                </p>
+                            </div>
+                        </div>
+                        <p class="reviews__desc">
+                            Nu m-am așteptat să ajungă atât de repede. Mulțumesc! 😊
+                        </p>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="reviews__user">
+                            <img src="img/reviews-user3.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="35" height="35">
+                            <div>
+                                <h3 class="reviews__user_name">R***** *****</h3>
+                                <p class="reviews__user_verify">
+                                    Verified
+                                </p>
+                            </div>
+                        </div>
+                        <p class="reviews__desc">
+                            Sunt foarte mulțumit de achiziție, calitate este excelentă și prețul bun! 🔝
+                        </p>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="reviews__user">
+                            <img src="img/reviews-user4.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="35" height="35">
+                            <div>
+                                <h3 class="reviews__user_name">V**** *****</h3>
+                                <p class="reviews__user_verify">
+                                    Verified
+                                </p>
+                            </div>
+                        </div>
+                        <p class="reviews__desc">
+                            Produsul arată exact ca în imagine 👍
+                        </p>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="reviews__user">
+                            <img src="img/reviews-user5.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="35" height="35">
+                            <div>
+                                <h3 class="reviews__user_name">D***** *****</h3>
+                                <p class="reviews__user_verify">
+                                    Verified
+                                </p>
+                            </div>
+                        </div>
+                        <p class="reviews__desc">
+                            Sunt impresionată de produsele dvs. și de livrarea rapidă. Recomand!
+                        </p>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="reviews__user">
+                            <img src="img/reviews-user6.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="35" height="35">
+                            <div>
+                                <h3 class="reviews__user_name">M**** *****</h3>
+                                <p class="reviews__user_verify">
+                                    Verified
+                                </p>
+                            </div>
+                        </div>
+                        <p class="reviews__desc">
+                            De multe ori cumpăr din magazinul dvs. online și sunt întotdeauna foarte fericită!
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="rev">
+            <div class="container">
+                <ul class="rev__list">
+                    <li class="rev__item">
+                        <div class="rev__content">
+                            <div class="rev__user">
+                                <p class="rev__avatar">FL</p>
+                                <h3 class="rev__name">
+                                    Florentina D.
+                                    <span>
+                                        5/5
+                                        <img src="img/stars-rate.svg" alt="<?= $main_title ?>"
+                                            title="<?= $main_title ?>" width="65">
+                                    </span>
+                                </h3>
+                            </div>
+                            <p class="rev__desc">
+                                Ideal pentru fiica mea de 4 ani. Călătoria de 5 ore cu mașina până la destinația noastră
+                                de vacanță trece într-o clipită cu această masă. Și am primit-o la comandă foarte
+                                repede.
+                            </p>
+                        </div>
+                        <div class="rev__image_wrapper">
+                            <img src="img/rev-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="rev__image" width="100">
+                        </div>
+                    </li>
+                    <li class="rev__item">
+                        <div class="rev__content">
+                            <div class="rev__user">
+                                <p class="rev__avatar">IN</p>
+                                <h3 class="rev__name">
+                                    Ines F.
+                                    <span>
+                                        5/5
+                                        <img src="img/stars-rate.svg" alt="<?= $main_title ?>"
+                                            title="<?= $main_title ?>" width="65">
+                                    </span>
+                                </h3>
+                            </div>
+                            <p class="rev__desc">
+                                Foarte practică și bine proiectată. Produs bun și livrare rapidă
+                            </p>
+                        </div>
+                        <div class="rev__image_wrapper">
+                            <img src="img/rev-img2.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="rev__image" width="100">
+                        </div>
+                    </li>
+                    <li class="rev__item">
+                        <div class="rev__content">
+                            <div class="rev__user">
+                                <p class="rev__avatar">LT</p>
+                                <h3 class="rev__name">
+                                    Lisa T.
+                                    <span>
+                                        5/5
+                                        <img src="img/stars-rate.svg" alt="<?= $main_title ?>"
+                                            title="<?= $main_title ?>" width="65">
+                                    </span>
+                                </h3>
+                            </div>
+                            <p class="rev__desc">
+                                Foarte la îndemână și bine gândit. Produs bun și livrare rapidă
+                            </p>
+                        </div>
+                        <div class="rev__image_wrapper">
+                            <img src="img/rev-img3.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="rev__image" width="100">
+                        </div>
+                    </li>
+                    <li class="rev__item">
+                        <div class="rev__content">
+                            <div class="rev__user">
+                                <p class="rev__avatar">MC</p>
+                                <h3 class="rev__name">
+                                    Miha C.
+                                    <span>
+                                        5/5
+                                        <img src="img/stars-rate.svg" alt="<?= $main_title ?>"
+                                            title="<?= $main_title ?>" width="65">
+                                    </span>
+                                </h3>
+                            </div>
+                            <p class="rev__desc">
+                                O masă practică, ușoară și ușor de transportat. Este grozavă! O luăm mereu cu noi pe
+                                drum, fie că mergem cu mașina sau cu avionul.
+                            </p>
+                        </div>
+                        <div class="rev__image_wrapper">
+                            <img src="img/rev-img4.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="rev__image" width="100">
+                        </div>
+                    </li>
+                    <li class="rev__item">
+                        <div class="rev__content">
+                            <div class="rev__user">
+                                <p class="rev__avatar">OU</p>
+                                <h3 class="rev__name">
+                                    Olja U.
+                                    <span>
+                                        5/5
+                                        <img src="img/stars-rate.svg" alt="<?= $main_title ?>"
+                                            title="<?= $main_title ?>" width="65">
+                                    </span>
+                                </h3>
+                            </div>
+                            <p class="rev__desc">
+                                O achiziție excelentă, această măsuță are totul pentru a ține copilul ocupat și îmi
+                                place că poate crea ceva, când călătorim, în loc să fie tot timpul pe telefon.
+                            </p>
+                        </div>
+                        <div class="rev__image_wrapper">
+                            <img src="img/rev-img5.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="rev__image" width="100">
+                        </div>
+                    </li>
+                    <li class="rev__item">
+                        <div class="rev__content">
+                            <div class="rev__user">
+                                <p class="rev__avatar">RK</p>
+                                <h3 class="rev__name">
+                                    Raluca K.
+                                    <span>
+                                        5/5
+                                        <img src="img/stars-rate.svg" alt="<?= $main_title ?>"
+                                            title="<?= $main_title ?>" width="65">
+                                    </span>
+                                </h3>
+                            </div>
+                            <p class="rev__desc">
+                                O achiziție excelentă, acest birou are într-adevăr totul pentru a distrage atenția unui
+                                copil și îmi place că poate crea ceva în mișcare în loc să fie bolnav pe telefon.
+                            </p>
+                        </div>
+                        <div class="rev__image_wrapper">
+                            <img src="img/rev-img6.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="rev__image" width="100">
+                        </div>
+                    </li>
+                    <li class="rev__item">
+                        <div class="rev__content">
+                            <div class="rev__user">
+                                <p class="rev__avatar">SC</p>
+                                <h3 class="rev__name">
+                                    Sanja C.
+                                    <span>
+                                        5/5
+                                        <img src="img/stars-rate.svg" alt="<?= $main_title ?>"
+                                            title="<?= $main_title ?>" width="65">
+                                    </span>
+                                </h3>
+                            </div>
+                            <p class="rev__desc">
+                                Ideal pentru fiica mea de 4 ani. Călătoria de 5 ore cu mașina până la destinația noastră
+                                de vacanță trece într-o clipă cu această masă. Și am primit-o foarte repede.
+                            </p>
+                        </div>
+                        <div class="rev__image_wrapper">
+                            <img src="img/rev-img7.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="rev__image" width="100">
+                        </div>
+                    </li>
+                    <li class="rev__item">
+                        <div class="rev__content">
+                            <div class="rev__user">
+                                <p class="rev__avatar">SM</p>
+                                <h3 class="rev__name">
+                                    Sergiu M.
+                                    <span>
+                                        5/5
+                                        <img src="img/stars-rate.svg" alt="<?= $main_title ?>"
+                                            title="<?= $main_title ?>" width="65">
+                                    </span>
+                                </h3>
+                            </div>
+                            <p class="rev__desc">
+                                O masă la îndemână, ușoară și ușor de transportat. Este grozavă! O luăm mereu cu noi pe
+                                drum, fie că mergem cu mașina sau cu avionul.
+                            </p>
+                        </div>
+                        <div class="rev__image_wrapper">
+                            <img src="img/rev-img8.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                class="rev__image" width="100">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <h2 class="gallery__title">
+                    Galerie
+                </h2>
+                <ul class="gallery__list">
+                    <li class="gallery__item">
+                        <img src="img/gallery-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                            class="gallery__image" width="300">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="img/gallery-img2.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                            class="gallery__image" width="300">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="img/gallery-img3.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                            class="gallery__image" width="300">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="img/gallery-img4.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                            class="gallery__image" width="300">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="img/gallery-img5.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                            class="gallery__image" width="300">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="img/gallery-img6.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                            class="gallery__image" width="300">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <img src="img/logo-dark.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" class="faq__logo"
+                    width="150">
+                <h2 class="faq__title">
+                    Întrebări și răspunsuri
+                </h2>
+                <p class="faq__clients">
+                    Mai mult de 1.651.467 de clienți mulțumiți.
+                </p>
+                <ul class="faq__list">
+                    <li class="faq__item">
+                        <h3 class="faq__question">
+                            Cine asigură transportul?
+                        </h3>
+                        <p class="faq__answer">
+                            Transportul este asigurat de FanCourier, înainte de livrare vă anuntăm prin mesaj.
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__question">
+                            Pot să returnez produsul?
+                        </h3>
+                        <p class="faq__answer">
+                            Bineînțeles, dvs. ne trimiteți produsul înapoi și noi vom rambursa suma achiziționată.
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__question">
+                            Care sunt modalitățile de plată?
+                        </h3>
+                        <p class="faq__answer">
+                            Mod de plată: cu cardul de credit sau în numerar la livrare.
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__question">
+                            Ce înseamnă 100% garanție?
+                        </h3>
+                        <p class="faq__answer">
+                            Pentru orice nemulțumire legată de produs, vă returnăm banii fără întrebări!
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h3 class="faq__question">
+                            Când primesc produsul comandat?
+                        </h3>
+                        <p class="faq__answer">
+                            Primiți pachetul în 3-6 zile lucrătoare
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h2 hidden>Footer</h2>
+            <img src="img/logo.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" class="footer__logo"
+                width="180">
+            <div class="footer__content">
+                <div class="footer__block footer__left">
+                    <a href="" class="footer__link" target="_blank">Termeni și condiții generale</a>
+                    <a href="" class="footer__link" target="_blank">Politica de utilizare a cookie-urilor</a>
+                    <a href="" class="footer__link" target="_blank">Despre noi</a>
+                    <a href="" class="footer__link" target="_blank">Contactează-ne</a>
+                    <a href="" class="footer__link" target="_blank">Manuale</a>
+                </div>
+                <div class="footer__block footer__left">
+                    <a href="" class="footer__link" target="_blank">Returnare</a>
+                    <a href="" class="footer__link" target="_blank">Retur și schimburi</a>
+                    <a href="" class="footer__link" target="_blank">Garanție</a>
+                    <h3 class="footer__subtitle">CONTACT</h3>
+                    <p class="footer__text">
+                        Arad international HUB PJU d.o.o. - FAN Courier VGP, Intravilan Arad, DN69 FN, VGP PARK -A,
+                        310059, Roma
+                    </p>
+                </div>
+                <div class="footer__block footer__left">
+                    <h3 class="footer__subtitle">100% cumpărare sigură</h3>
+                    <p class="footer__text">
+                        Returnare fără întrebări!
+                    </p>
+                    <h3 class="footer__subtitle">Comerciant european</h3>
+                    <p class="footer__text">
+                        Cele mai bune servicii..
+                    </p>
+                    <img src="img/footer-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                        class="footer__image" width="85" height="60">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>
