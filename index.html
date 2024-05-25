@@ -17,7 +17,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <button class="header__burger">
+            <button class="header__burger js-burger">
                 <img src="img/burger-icon.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="30"
                     height="30">
             </button>
@@ -32,56 +32,56 @@
         <section class="hero">
             <div class="container">
                 <ul class="hero__stories">
-                    <li class="hero__story">
+                    <li class="hero__story js-story">
                         <div class="hero__story_wrapper">
                             <img src="img/story-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
                                 width="52" height="52">
                         </div>
                         <p class="hero__story_name">Florentina D.</p>
                     </li>
-                    <li class="hero__story">
+                    <li class="hero__story js-story">
                         <div class="hero__story_wrapper">
                             <img src="img/story-img2.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
                                 width="52" height="52">
                         </div>
                         <p class="hero__story_name">Ines F.</p>
                     </li>
-                    <li class="hero__story">
+                    <li class="hero__story js-story">
                         <div class="hero__story_wrapper">
                             <img src="img/story-img3.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
                                 width="52" height="52">
                         </div>
                         <p class="hero__story_name">Lisa T.</p>
                     </li>
-                    <li class="hero__story">
+                    <li class="hero__story js-story">
                         <div class="hero__story_wrapper">
                             <img src="img/story-img4.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
                                 width="52" height="52">
                         </div>
                         <p class="hero__story_name">Miha C.</p>
                     </li>
-                    <li class="hero__story">
+                    <li class="hero__story js-story">
                         <div class="hero__story_wrapper">
                             <img src="img/story-img5.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
                                 width="52" height="52">
                         </div>
                         <p class="hero__story_name">Olja U.</p>
                     </li>
-                    <li class="hero__story">
+                    <li class="hero__story js-story">
                         <div class="hero__story_wrapper">
                             <img src="img/story-img6.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
                                 width="52" height="52">
                         </div>
                         <p class="hero__story_name">Raluca K.</p>
                     </li>
-                    <li class="hero__story">
+                    <li class="hero__story js-story">
                         <div class="hero__story_wrapper">
                             <img src="img/story-img7.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
                                 width="52" height="52">
                         </div>
                         <p class="hero__story_name">Sanja C.</p>
                     </li>
-                    <li class="hero__story">
+                    <li class="hero__story js-story">
                         <div class="hero__story_wrapper">
                             <img src="img/story-img8.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
                                 width="52" height="52">
@@ -384,6 +384,236 @@
                         </p>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="order">
+            <div class="container">
+                <h2 class="order__title">
+                    Formular de comandă
+                </h2>
+                <div class="order__header">
+                    <img src="img/order-warranty.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="70"
+                        height="70">
+                    <div>
+                        <h3 class="order__header_title">
+                            Garanție de 30 de zile „Fără glumă”
+                        </h3>
+                        <p class="order__header_desc">
+                            La 30 de zile de la achiziție puteți returna produsul și vom rambursa întregul preț de
+                            achiziție fără nicio întrebare.
+                        </p>
+                    </div>
+                </div>
+                <div class="order__count">
+                    <div class="order__count_item active" data-price="109.99" data-count="1">
+                        <div class="order__count_block">
+                            <b class="order__count_quantity">1x</b>
+                            <div class="order__count_price">
+                                109.99 lei
+                                <span class="order__count_one">
+                                    PER BUCATĂ
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__count_item" data-price="87.99" data-count="2">
+                        <h3 class="order__count_title orange">
+                            OFERTA SĂPTĂMÂNII
+                        </h3>
+                        <div class="order__count_block">
+                            <b class="order__count_quantity">2x</b>
+                            <div class="order__count_price">
+                                87.99 lei
+                                <span class="order__count_one">
+                                    PER BUCATĂ
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__count_item" data-price="76.99" data-count="3">
+                        <h3 class="order__count_title green">
+                            ECONOMISEȘTE
+                        </h3>
+                        <div class="order__count_block">
+                            <b class="order__count_quantity">3x</b>
+                            <div class="order__count_price">
+                                76.99 lei
+                                <span class="order__count_one">
+                                    PER BUCATĂ
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__image_wrapper">
+                    <img src="img/order-img.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                        class="order__image">
+                </div>
+                <div class="order__get">
+                    <img src="img/order-get.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="45"
+                        height="45">
+                    <span>Astăzi plasezi comanda, <b>luni</b> primești coletul.</span>
+                </div>
+                <form class="order__form form">
+                    <p class="form__title">
+                        Datele cumpărătorului
+                    </p>
+                    <div class="form__top">
+                        <input type="text" name="name" required placeholder="Nume" class="form__input">
+                        <input type="text" name="surname" required placeholder="Prenume" class="form__input">
+                    </div>
+                    <input type="tel" placeholder="Numărul de telefon" required class="form__input mb-10">
+                    <p class="form__text">
+                        Numărul de telefon va fi folosit doar pentru a vă informa cu privire la statusul coletului dvs.
+                    </p>
+                    <input type="email" placeholder="E-mail" required class="form__input mb-20">
+                    <p class="form__title">
+                        Adresa de livrare
+                    </p>
+                    <p class="form__text">
+                        Introduceți adresa la care vă aflați între orele 8:00 și 17:00. (Pentru serviciul de livrare Fan
+                        Courier)
+                    </p>
+                    <input type="text" name="city" required placeholder="Judet" class="form__input mb-10">
+                    <div class="form__top">
+                        <input type="text" name="street" required placeholder="Adresa" class="form__input">
+                        <input type="number" name="number" required placeholder="Nr." class="form__input">
+                    </div>
+                    <div class="form__top">
+                        <input type="text" name="bl" required placeholder="BL" class="form__input">
+                        <input type="text" name="sc" required placeholder="SC" class="form__input">
+                    </div>
+                    <div class="form__top mb-25">
+                        <input type="text" name="et" required placeholder="ET" class="form__input">
+                        <input type="text" name="ap" required placeholder="AP" class="form__input">
+                    </div>
+                    <p class="form__title">
+                        Alege tipul de livrare
+                    </p>
+                    <div class="form__delivery mb-20">
+                        <img src="img/form-delivery.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="24"
+                            height="24">
+                        <span>Comandă expediată din depozitul românesc.</span>
+                    </div>
+                    <div class="delivery">
+                        <label class="delivery__label" data-price="19.99" data-del-type="rapid">
+                            <input type="radio" name="delivery__type" class="delivery__radio" data-price="19.99"
+                                data-del-type="rapid">
+                            <img src="img/delivery-icon1.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="27" height="27">
+                            <div class="delivery__info">
+                                <p class="delivery__date">
+                                    lun., 27 mai - mie., 29 mai
+                                </p>
+                                <p class="delivery__price">
+                                    <b>Rapid</b> 19.99 lei
+                                </p>
+                            </div>
+                        </label>
+                        <label class="delivery__label delivery__label_selected" data-price="14.99"
+                            data-del-type="standard">
+                            <input type="radio" name="delivery__type" checked class="delivery__radio" data-price="14.99"
+                                data-del-type="standard">
+                            <img src="img/delivery-icon2.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="27" height="27">
+                            <div class="delivery__info">
+                                <p class="delivery__date">
+                                    lun., 29 mai - mie., 31 mai
+                                </p>
+                                <p class="delivery__price">
+                                    <b>Standard</b> 14.99 lei
+                                </p>
+                            </div>
+                        </label>
+                    </div>
+                    <p class="form__title">
+                        Cumpărați împreună și economisiți
+                    </p>
+                    <div class="form__plus plus">
+                        <label class="plus__label" data-price="5.99">
+                            <input type="checkbox" name="form__checkbox" class="plus__checkbox" data-price="5.99">
+                            <img src="img/plus-img1.png" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="60"
+                                height="60">
+                            <div class="plus__info">
+                                <p class="plus__title">
+                                    Asigurarea pachetului
+                                </p>
+                                <p class="plus__text">
+                                    Dacă produsul din pachet este deteriorat, vă trimitem altul fără întrebări.
+                                </p>
+                                <div class="plus__price">
+                                    <p class="plus__price_old">11.98lei</p>
+                                    <p class="plus__price_new">5.99lei</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="plus__label" data-price="29.99">
+                            <input type="checkbox" name="form__checkbox" class="plus__checkbox" data-price="29.99">
+                            <img src="img/plus-img2.gif" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="90"
+                                height="90">
+                            <div class="plus__info">
+                                <p class="plus__title">
+                                    Cadou
+                                </p>
+                                <p class="plus__text">
+                                    Un produs-surpriză excelent doar
+                                </p>
+                                <div class="plus__price">
+                                    <p class="plus__price_old">59.98lei</p>
+                                    <p class="plus__price_new">29.99lei</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <p class="form__title mt-20">
+                        Metoda de plată
+                    </p>
+                    <div class="metod">
+                        <label class="metod__label metod__label_selected" data-price="0.00">
+                            <input type="radio" name="metod__type" class="metod__radio is-card" data-price="0.00">
+                            <img src="img/metod-icon1.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="30" height="34">
+                            <div class="metod__info">
+                                <p class="metod__date">
+                                    Carte de credit
+                                </p>
+                                <p class="metod__price metod__price_free">
+                                    0.00LEI
+                                </p>
+                            </div>
+                        </label>
+                        <label class="metod__label" data-price="9.99">
+                            <input type="radio" name="metod__type" class="metod__radio" data-price="9.99">
+                            <img src="img/metod-icon2.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                                width="27" height="27">
+                            <div class="metod__info">
+                                <p class="metod__date">
+                                    Plata la livrare
+                                </p>
+                                <p class="metod__price">
+                                    +9.99lei
+                                </p>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <input type="text" pattern="[0-9]" name="number" placeholder="Credit card"
+                            class="form__input mb-10">
+                        <div class="form__top">
+                            <input type="text" pattern="[0-9]" name="date" placeholder="10/25" class="form__input">
+                            <input type="text" pattern="[0-9]" name="code" placeholder="123" class="form__input">
+                        </div>
+                        <img src="img/card-icon1.svg" alt="<?= $main_title ?>" title="<?= $main_title ?>" width="86"
+                            height="30">
+                    </div>
+                    <p class="form__total">
+                        Total: <span><b class="js-total">150.99</b> lei</span>
+                    </p>
+                    <button type="submit" class="form__submit">
+                        Finalizați comanda
+                    </button>
+                </form>
             </div>
         </section>
 
@@ -705,6 +935,40 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal js-modal">
+        <div class="modal__image_wrapper">
+            <img src="img/rev-img1.webp" alt="<?= $main_title ?>" title="<?= $main_title ?>"
+                class="modal__image js-img-modal">
+        </div>
+    </div>
+
+    <div class="menu js-menu">
+        <div class="container">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="" class="menu__link" target="_blank">
+                        TERMENI ȘI CONDIȚII GENERALE
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link" target="_blank">
+                        RETURNARE
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link" target="_blank">
+                        DREPTUL DE RETRAGERE DIN CONTRACT
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link" target="_blank">
+                        GARANȚIE
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <script defer src="js/jquery.min.js"></script>
     <script defer src="js/swiper-bundle.min.js"></script>

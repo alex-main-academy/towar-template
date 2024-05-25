@@ -49,6 +49,12 @@
         border: .2rem solid #fd1d1d;
         border-radius: 50%;
     }
+
+    &.active {
+        &::before {
+            display: none;
+        }
+    }
 }
 
 .hero__story_name {
