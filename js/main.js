@@ -246,3 +246,6 @@ metodRadios.forEach((radio) => {
         handleChageTotalPrice();
     });
 });
+
+// work with gallery
+const gallery = new SimpleLightbox(".gallery li a", { captionDelay: 250 });
